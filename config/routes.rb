@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  resources :todo_lists
+  resources :todo_lists do
+   resources :todo_items
+  end
   get 'pages/index'
   devise_for :users
   root to: "pages#index"
