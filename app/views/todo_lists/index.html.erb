@@ -27,3 +27,5 @@
 <br>
 
 <%= link_to 'New Todo List', new_todo_list_path %>
+<%= link_to 'CSV', todo_lists_path(format: :csv) %>
+<%= link_to 'Export PDF', todo_lists_path(format: :pdf)%>
