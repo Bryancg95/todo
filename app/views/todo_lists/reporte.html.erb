@@ -1,0 +1,22 @@
+<div class = "pdf">
+    <h1 class="title">List and Items</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>title</th>
+            <th>Description</th>
+            <th>Item</th>
+        </tr>
+        <tbody>
+            <% @todo_lists.all_todo_list_item.each do |todo_list| %>
+                <tr>
+                     <td><%= todo_list.title %></td>
+                     <td><%= todo_list.description %></td>
+                         <td><%= todo_list.item %></td>
+                </tr>
+            <%end%>
+
+        </tbody>
+    </thead>
+</table>
+</div>
