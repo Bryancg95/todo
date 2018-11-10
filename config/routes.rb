@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'send' => 'send#index'
+  post 'send' => 'send#create'
   resources :todo_lists do
      resources :todo_items do
       member do
